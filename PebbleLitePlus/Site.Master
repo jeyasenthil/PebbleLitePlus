@@ -1,0 +1,133 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="PebbleLitePlus.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Center</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- This allows the page to reflow content to match different screen sizes -->
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0)"/>
+
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+   <!--<script type="text/javascript" src="javas.js"></script>-->
+   <link  rel="stylesheet" type="text/css" runat="server" media="all" href="LitePlusStyleSheet1.css" />
+     <link id="fav" rel="shortcut icon"  type="image/png" href="<%=ResolveUrl("~/Images/Data_cen.PNG")%>"/> 
+    <!-- for the open sans font-->
+  
+
+  <!--  <style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+</style>-->
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+
+  <asp:ContentPlaceHolder ID="head" runat="server">
+ </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form  runat="server" autocomplete="off">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+           <header>
+               <br />
+               
+                  <div style="text-align:center">
+        <h3 style="color:#0099A8;  font-family: Open Sans, sans-serif;">Health Benefits Consulting Suite</h3>
+    </div>
+               <br />
+               <br />
+              </header>
+        <div class="container-fluid">
+         <div class="row" style="height:10%;width:100%">
+             <div class="offset-1">
+                
+                            
+ <asp:updatepanel ID="Plbtns" UpdateMode="Conditional" runat="server"> 
+ <ContentTemplate> 
+
+
+
+                        <asp:Panel ID="Plans_panel" runat="server">
+                               <div class="btn-group">
+                               <asp:Button ID="Basebtn" CssClass="Planbtn" AutoPostBack="true" EnableViewState="true" ClientIDMode="Static" runat="server"  Text="Base" OnClick="Basebtn_Click" /> 
+                               <asp:Button ID="PlanPlusbtn1" CssClass="PlanPlusbtn" AutoPostBack="true" runat="server" Text="+"  OnClick="PlanPlusbtn1_Click" /> 
+
+                                <asp:Button ID="Plan2btn" CssClass="Planbtn" AutoPostBack="true" EnableViewState="true" ClientIDMode="Static" runat="server" Text="Plan 2" visible="false" OnClick="Plan2btn_Click"  />
+                                <asp:Button ID="BtnP2"  CssClass="PlanPlusbtn" AutoPostBack="true" runat="server" Text="+" visible="false" OnClick="BtnP2_Click"/>
+                              
+
+                                <asp:Button ID="Plan3btn"  CssClass="Planbtn" AutoPostBack="true" EnableViewState="true" ClientIDMode="Static" runat="server" Text="Plan 3" visible="false" OnClick="Plan3btn_Click" />
+                                <asp:Button ID="BtnP3" CssClass="PlanPlusbtn" AutoPostBack="true" runat="server" Text="+"  visible="false"  OnClick="BtnP3_Click" />
+                                
+                                   <!-- OnClientClick="btnP3()"-->
+                                <asp:Button ID="Plan4btn" CssClass="Planbtn" AutoPostBack="true" EnableViewState="true" ClientIDMode="Static" runat="server" Text="Plan 4" visible="false" OnClick="Plan4btn_Click" />
+                                <asp:Button ID="BtnP4" CssClass="PlanPlusbtn" AutoPostBack="true" runat="server" Text="+"  visible="false" OnClick="BtnP4_Click"  />
+                                
+
+                                <asp:Button ID="Plan5btn"  CssClass="Planbtn" AutoPostBack="true" EnableViewState="true" ClientIDMode="Static" runat="server" Text="Plan 5"  visible="false" OnClick="Plan5btn_Click" />
+                                <asp:Button ID="BtnP5" CssClass="PlanPlusbtn" AutoPostBack="true"  runat="server" Text="+" CausesValidation="false"  visible="false" OnClick="BtnP5_Click"  />
+                                
+
+                                <asp:Button ID="Plan6btn" CssClass="Planbtn" runat="server" AutoPostBack="true" ClientIDMode="Static" EnableViewState="true" Text="Plan 6"  visible="false" OnClick="Plan6btn_Click"  />
+                               
+                                       </div><!-- button group-->
+                                    </asp:Panel>
+ 
+     </ContentTemplate>
+ </asp:updatepanel>
+             </div>
+         </div>
+         <div class="row" style="height:80%;width:100%"> 
+             <div class="offset-1">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                         </div>
+                 </div>
+            
+         <div class="row" style="height:10%;width:100%">
+             <div class="offset-3">
+                
+                 <asp:Button ID="homeBtn" runat="server" Text="Home" OnClick="homeBtn_Click" />
+                 <asp:Button ID="Button7" runat="server" Text="Save/SaveAs" />
+                 <asp:Button ID="Button8" runat="server" Text="Submit" />
+             </div>
+             </div>     
+          </div> 
+         <!--<hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - PebbleLitePlus</p>
+            </footer>-->
+       
+
+    </form>
+    <script>
+        $(document).ready(function () {
+          /*  $("#homeBtn").on("click", function () {
+                location.replace("Default.aspx")
+            });*/
+        });
+    </script>
+</body>
+</html>

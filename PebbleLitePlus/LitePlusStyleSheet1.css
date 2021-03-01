@@ -1,0 +1,258 @@
+﻿body {
+    font-family: sans-serif;
+    font-size:14px;
+}
+:root {
+    --bs-primary: #00AEC0;
+}
+.LandPageBtn {
+    background-color:#0099A8;
+    border-radius: 30px;
+    height: 130px;
+    width: 230px;
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+    vertical-align: middle;
+    cursor: pointer;
+   
+}
+.pers {
+    font-size: medium;
+    text-align: left;
+    color: black;
+   
+    display: inline-block;
+    Height: 23px;
+    background-color:white;
+    vertical-align: middle;
+}
+
+.LandPageBtn1 {
+    background-color: darkgray;
+    border-radius: 30px;
+    height: 130px;
+    width: 230px;
+    margin: auto;
+    padding-top: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.chkBoxcls {
+    width: 25px;
+    height: 25px;
+}
+/* base page */
+/* Plan 1 styles*/
+.accordion .panel {
+    border: none;
+    margin: auto;
+}
+.btn-check:checked 
+ {
+    border: 1px solid gray;
+}
+.btn-outline-primary:hover {
+    border: 1px solid  gray;
+}
+.btn-outline-primary {
+    border: 1px solid gray;
+}
+
+
+.accordion .panel h1 {
+    padding: 0.2em;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #00AEC0;
+    color: white;
+    cursor: pointer;
+}
+
+        .accordion .panel h1:hover {
+            background-color: #00AEC0;
+        }
+
+ .accordion .panel .content {
+        padding: 0.5em;
+    }
+
+.c1 {
+    width: 100%;
+    float: left;
+}
+
+a {
+    color: #000;
+}
+
+
+.TxtBox1 {
+    Height: 23px;
+    Width: 120px;
+    text-align: right;
+}
+.tealCol{
+    background-color:teal;
+    color:white;
+
+}
+
+.TxtBox2 {
+    Height: 23px;
+    Width: 60px;
+    text-align: right;
+}
+
+.TxtBox11 {
+    Height: 23px;
+    Width: 45px;
+    text-align: right;
+   border: solid;
+   /* border-right-style: hidden;*/
+    vertical-align: middle;
+    border-width: 1px;
+}
+
+.TxtBox11:focus {
+        outline: none;
+        
+    }
+.freeTxt:focus {
+    border-color:teal;
+}
+.freeTxt {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: darkgrey;
+    width: 365px;
+    padding-bottom:-2px;
+    margin-bottom: -2px;
+}
+.DeTbx1:focus {
+    outline: none;
+}
+
+
+.DeTbx1 {
+    width: 78px;
+    height: 25px;
+    border-right-style: none;
+    text-align:left;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle;
+    
+}
+.calspan {
+    height: 25px;
+    border: 2px solid black;
+    border-left-style: none;
+    vertical-align: middle;
+    padding-top:3px;
+    padding-right:2px;
+
+}
+
+
+.B1 {
+    background-color: cadetblue;
+    border-color: cadetblue;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: medium;
+    background-image: url(images/PlanDeG.PNG);
+    padding: 0px 10px 0px 23px;
+    background-repeat: no-repeat;
+}
+
+.Planbtn {
+    border: 1px solid #00416A;
+    border-radius: 5px;
+    color: #00416A;
+    background-color: white;
+    font-weight: bold;
+    font-size: medium;
+    background-image: url(images/PlanDe.PNG);
+    padding: 0px 10px 0px 23px;
+    background-repeat: no-repeat;
+}
+.btn-check:active + .btn-outline-primary, .btn-check:checked + .btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active {
+    background-color: #00AEC0;
+}
+
+.btn-check:active + .btn-outline-primary, .btn-check:checked + .btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active :hover {
+        background-color: var(--bs-primary);
+    }
+.btn-outline-primary:hover {
+    background-color: var(--bs-primary);
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show > .btn-outline-primary.dropdown-toggle {
+    background-color: var(--bs-primary);
+}
+.btn-outline-primary {
+    color: var(--bs-primary);
+}
+
+button:focus {
+    outline: 0 !important;
+    outline: none !important;
+    
+}
+button:active {
+    outline: 0 !important;
+}
+
+/* Age gender*/
+.AGtxtB1 {
+    Height: 16px;
+    Width: 55px;
+    text-align: right;
+}
+
+.AGtxtB {
+    color: black;
+    Height: 16px;
+    Width: 52px;
+    text-align: right;
+}
+
+.ageCol6 tr td:nth-child(6) {
+    display: none;
+}
+
+.ageCol7 tr td:nth-child(7) {
+    display: none;
+}
+
+.ageCap4 tr th:nth-child(4) {
+    display: none;
+}
+
+
+.ageCol8 tr td:nth-child(8) {
+    display: none;
+}
+
+.ageCol9 tr td:nth-child(9) {
+    display: none;
+}
+
+.ageCap5 tr th:nth-child(5) {
+    display: none;
+}
+
+.ageCol4 tr td:nth-child(4) {
+    display: none;
+}
+
+.ageCol5 tr td:nth-child(5) {
+    display: none;
+}
+
+.ageCap3 tr th:nth-child(3) {
+    display: none;
+}
