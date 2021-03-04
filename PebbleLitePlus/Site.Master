@@ -102,18 +102,21 @@
          </div>
          <div class="row" style="height:80%;width:100%"> 
              <div class="offset-1">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
-                         </div>
-                 </div>
+                           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                   </div>
+              </div>
             
          <div class="row" style="height:10%;width:100%">
-             <div class="offset-3">
-                
+             <div class="offset-1">
+             <div class="col-7" style="float:left;">
                  <asp:Button ID="homeBtn" runat="server" Text="Home" OnClick="homeBtn_Click" />
-                 <asp:Button ID="Button7" runat="server" Text="Save/SaveAs" />
-                 <asp:Button ID="Button8" runat="server" Text="Submit" />
+                 <asp:Button ID="saveBtn" runat="server" Text="Save/SaveAs" />
+              </div>
+             <div class="col-3" style="float:right;">
+                 <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
              </div>
-             </div>     
+             </div> 
+             </div>
           </div> 
          <!--<hr />
             <footer>

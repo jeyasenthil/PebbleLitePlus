@@ -90,7 +90,7 @@ a {
 
 .TxtBox1 {
     Height: 23px;
-    Width: 120px;
+    Width: 87px;
     text-align: right;
 }
 .tealCol{
@@ -118,6 +118,19 @@ a {
 .TxtBox11:focus {
         outline: none;
         
+    }
+.TxtBox12 {
+    Height: 23px;
+    Width: 45px;
+    text-align: right;
+    border: solid;
+    /* border-right-style: hidden;*/
+    vertical-align: middle;
+    border-width: 1px;
+}
+
+    .TxtBox12:focus {
+        outline: none;
     }
 .freeTxt:focus {
     border-color:teal;
@@ -208,15 +221,16 @@ button:active {
 
 /* Age gender*/
 .AGtxtB1 {
-    Height: 16px;
-    Width: 55px;
+    Height: 23px;
+    Width: 87px;
     text-align: right;
+   
 }
 
 .AGtxtB {
     color: black;
-    Height: 16px;
-    Width: 52px;
+    Height: 23px;
+    Width: 87px;
     text-align: right;
 }
 
