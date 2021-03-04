@@ -48,7 +48,7 @@
 
                     <div class="col-12">
                         <div style="color:white;background-color:#00AEC0; text-align:center">
-                            <h4>DashBoard - One</h4>
+                            <h4>DashBoard - Two</h4>
                         </div>
                        
 
