@@ -139,7 +139,7 @@ a {
     outline: 0;
     border-width: 0 0 2px;
     border-color: darkgrey;
-    width: 365px;
+    width: 290px;
     padding-bottom:-2px;
     margin-bottom: -2px;
 }
@@ -168,6 +168,21 @@ a {
 
 }
 
+.sticky {
+    
+    position: fixed;
+    top: 0px;
+    padding: 0px;
+    background-color:white;
+   
+}
+.stickybot {
+    position: fixed;
+    bottom: 0px;
+    padding: 0px;
+    margin:0px;
+    background-color: white;
+}
 
 .B1 {
     background-color: cadetblue;
@@ -176,21 +191,29 @@ a {
     border-radius: 5px;
     font-weight: bold;
     font-size: medium;
-    background-image: url(images/PlanDeG.PNG);
-    padding: 0px 10px 0px 23px;
-    background-repeat: no-repeat;
+    padding:0px;
+    
 }
-
-.Planbtn {
-    border: 1px solid #00416A;
+.PlanbtnNor {
+    border: 1px solid ;
     border-radius: 5px;
-    color: #00416A;
+    color: black;
     background-color: white;
     font-weight: bold;
     font-size: medium;
-    background-image: url(images/PlanDe.PNG);
-    padding: 0px 10px 0px 23px;
-    background-repeat: no-repeat;
+    padding:5px;
+   
+}
+
+.Planbtn {
+    border: 1px solid ;
+    border-radius: 5px;
+    color: white;
+    background-color: #00AEC0;
+    font-weight: bold;
+    font-size: medium;
+    padding:5px;
+    
 }
 .btn-check:active + .btn-outline-primary, .btn-check:checked + .btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active {
     background-color: #00AEC0;

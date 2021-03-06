@@ -16,7 +16,9 @@ namespace PebbleLitePlus
             {
                 CalTxt.Text = Session["effDate"].ToString();
             }
-            
+
+           
+
         }
 
         protected void SessTxt_TextChanged(object sender, EventArgs e)

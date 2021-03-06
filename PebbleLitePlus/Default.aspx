@@ -25,7 +25,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-       <br />
+    <!--   <br />
     <br />
     <br />
     <div style="text-align:center">
@@ -33,9 +33,36 @@
     </div>
     <br />
     <br />
+    <br />-->
+        <div class="container-fluid" style="margin:auto">
+            <header>
+
+        <div class="row sticky" style="margin:auto;padding:0px;width:98%;vertical-align:top;border-color:gainsboro;border:1px outset">
+                  
+                         <div class="col-3"  style="width:210px; margin:0px;padding:0px;" ><img src="Images/Logo.png"  alt="Claros Analytics" />
+                     
+                           </div>
+                
+                         <div class="col-6" style="padding:0px; vertical-align:central; text-align:center; border-color:gainsboro "  >
+         
+                
+                                <h3 style="color:#0099A8; padding-top:10px; text-align:center; font-family: Open Sans, sans-serif;">Health Benefits Consulting Suite</h3>
+      
+                    
+                               </div> 
+                    </div>
+
+                </header>
+            </div>
+
+     <br />
+    <br />
+    <br />
+     <br />
+    <br />
     <br />
    
-   <div class="container" style="margin:auto">
+   <div class="container">
     <div class="row">
        
         <div class="LandPageBtn"   id="Ca">
@@ -52,6 +79,7 @@
          
    </div>
   </div>
+            
  </form>
    
 </body>

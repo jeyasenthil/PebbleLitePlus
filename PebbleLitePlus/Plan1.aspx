@@ -32,7 +32,8 @@
 
    <!-- we dont need these buttons <input type="button" class="colBtn1"  value="Collapse All" id="ca"/>
     <input type="button" class="colBtn1" value="Expand All" id="ea"/>-->
-         <table id="p1table1"style="table-layout:fixed;width:100%" >
+    <div class="container-fluid" style="margin:auto;padding:0px;">
+         <table id="p1table1"style="table-layout:fixed; margin:auto;width:100%" >
              <tr>
                  <td style="width:60%"> 
 <!-- stepper --> 
@@ -44,11 +45,11 @@
                         <!-- <asp:LinkButton ID="LinkButton1" CssClass="btn btn btn-default btn-arrow-left" runat="server">Step1</asp:LinkButton>-->   </asp:Panel>
                         
                  </td>
-                 <td style="width:40%">
+                 <td style="width:39%;  margin-left:20px;padding-right:2px;;position:fixed;border:2px solid gainsboro;background-color:white">
 
                     <div class="col-12">
-                        <div style="color:white;background-color:#00AEC0; text-align:center">
-                            <h4>DashBoard - Two</h4>
+                        <div style="color:white; color:#00AEC0; text-align:center">
+                            <h4><strong>DashBoard </strong></h4>
                         </div>
                        
 
@@ -58,7 +59,7 @@
                  </td>
              </tr>
              <tr>
-                 <td style="width:60%">
+                 <td style="width:60%; border:2px solid gainsboro;">
 
         <asp:Panel ID="p1_Panel" runat="server">
             <asp:MultiView ID="MultiView1" ActiveViewIndex="0" runat="server">
@@ -83,7 +84,7 @@
                       </td>
                       <td style="text-align:left;padding-left:10px;">
                           <asp:TextBox ID="CalTxt" 
-                              OnTextChanged="CalTxt_TextChanged" AutoPostBack="true" CssClass="DeTbx1"  ClientIDMode="Static" runat="server"></asp:TextBox><span><i runat="server" class="fa fa-calendar form-control-feedback calspan"></i></span>
+                              OnTextChanged="CalTxt_TextChanged"  CssClass="DeTbx1"  ClientIDMode="Static" runat="server"></asp:TextBox><span><i runat="server" class="fa fa-calendar form-control-feedback calspan"></i></span>
                           <!--<span class="glyphicon glyphicon-calendar"></span>-->
                       </td>
                       <td></td>
@@ -186,7 +187,7 @@
                           <asp:Label ID="sicL" runat="server" Text="SIC Code:"></asp:Label>
                       </td>
                       <td style="text-align:left;padding-left:10px;">
-                          <asp:DropDownList ID="Sicddl1" AppendDataBoundItems="true" runat="server" DataSourceID="SqlDataSource1" DataTextField="siccode-desc" DataValueField="siccode-desc" AutoPostBack="True">
+                          <asp:DropDownList ID="Sicddl1" AppendDataBoundItems="true" runat="server" DataSourceID="SqlDataSource1" DataTextField="siccode-desc" DataValueField="siccode-desc" >
                              <Items>
        <asp:ListItem Text="000-National Average" Value="" />
    </Items>
@@ -265,7 +266,7 @@
                   
 
     <asp:Panel ID="AgePanel2"  style="display:none" runat="server">
-        <table  id="AgeGen2" style="border:solid 1px black;margin:0px;padding:0px" runat="server">
+        <table  id="AgeGen2" style="margin:0px;padding:0px" runat="server">
            <!-- <tr>
                 <th>Employee </th>
                 <th></th>
@@ -274,13 +275,13 @@
             </tr>-->
             <tr style="text-align:center">
 
-                <td>Age Band</td>
-                <td>Male</td>
-                <td>Female</td>
+                <td><strong>Age Band</strong></td>
+                <td><strong>Male</strong></td>
+                <td><strong>Female</strong></td>
 
             </tr>
             <tr>
-                <td><20</td>
+                <td><strong><20</strong></td>
                 <td >
                     <asp:TextBox ID="Txt20M" CssClass="AGtxtB" OnKeyPress="return isNumberKey2(this, event);" OnChange="TbTrigger(this);" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox></td>
                 <td >
@@ -290,7 +291,7 @@
 
             </tr>
             <tr>
-                <td>20-24</td>
+                <td><strong>20-24</strong></td>
                 <td>
                     <asp:TextBox ID="Txt24M" CssClass="AGtxtB" OnKeyPress="return isNumberKey2(this, event);" runat="server" OnChange="TbTrigger(this);" OnTextChanged="TextBox11_TextChanged"></asp:TextBox></td>
                 <td>
@@ -299,7 +300,7 @@
                
             </tr>
             <tr>
-                <td>25-29</td>
+                <td><strong>25-29</strong></td>
                 <td>
                     <asp:TextBox ID="Txt29M" CssClass="AGtxtB" OnKeyPress="return isNumberKey2(this, event);" runat="server" OnChange="TbTrigger(this);" OnTextChanged="TextBox21_TextChanged"></asp:TextBox></td>
                 <td>
@@ -308,7 +309,7 @@
 
             </tr>
             <tr>
-                <td>30-34</td>
+                <td><strong>30-34</strong></td>
                 <td>
                     <asp:TextBox ID="Txt34M" CssClass="AGtxtB" runat="server" OnChange="TbTrigger(this);" OnKeyPress="return isNumberKey2(this, event);" OnTextChanged="TextBox31_TextChanged"></asp:TextBox></td>
                 <td>
@@ -317,7 +318,7 @@
 
             </tr>
             <tr>
-                <td>35-39</td>
+                <td><strong>35-39</strong></td>
                 <td>
                     <asp:TextBox ID="Txt39M" CssClass="AGtxtB" runat="server" OnChange="TbTrigger(this);" OnKeyPress="return isNumberKey2(this, event);" OnTextChanged="TextBox41_TextChanged"></asp:TextBox></td>
                 <td>
@@ -326,7 +327,7 @@
 
             </tr>
             <tr>
-                <td>40-44</td>
+                <td><strong>40-44</strong></td>
                 <td>
                     <asp:TextBox ID="Txt44M" CssClass="AGtxtB" runat="server" OnChange="TbTrigger(this);" OnKeyPress="return isNumberKey2(this, event);" OnTextChanged="TextBox51_TextChanged"></asp:TextBox></td>
                 <td>
@@ -335,7 +336,7 @@
 
             </tr>
             <tr>
-                <td>45-49</td>
+                <td><strong>45-49</strong></td>
                 <td>
                     <asp:TextBox ID="Txt49M" CssClass="AGtxtB" runat="server" OnChange="TbTrigger(this);" OnKeyPress="return isNumberKey2(this, event);" OnTextChanged="TextBox51a_TextChanged"></asp:TextBox></td>
                 <td>
@@ -344,7 +345,7 @@
 
             </tr>
             <tr>
-                <td>50-54</td>
+                <td><strong>50-54</strong></td>
                 <td>
                     <asp:TextBox ID="Txt54M" CssClass="AGtxtB" runat="server" OnChange="TbTrigger(this);" OnKeyPress="return isNumberKey2(this, event);" OnTextChanged="TextBox61_TextChanged"></asp:TextBox></td>
                 <td>
@@ -354,7 +355,7 @@
             </tr>
 
             <tr>
-                <td>55-59</td>
+                <td><strong>55-59</strong></td>
                 <td>
                     <asp:TextBox ID="Txt59M" CssClass="AGtxtB" runat="server" OnChange="TbTrigger(this);" OnKeyPress="return isNumberKey2(this, event);" OnTextChanged="TextBox71_TextChanged"></asp:TextBox></td>
                 <td>
@@ -363,7 +364,7 @@
 
             </tr>
             <tr>
-                <td>60-64</td>
+                <td><strong>60-64</strong></td>
                 <td>
                     <asp:TextBox ID="Txt64M" CssClass="AGtxtB" runat="server" OnChange="TbTrigger(this);" OnKeyPress="return isNumberKey2(this, event);" OnTextChanged="TextBox81_TextChanged"></asp:TextBox></td>
                 <td>
@@ -372,7 +373,7 @@
 
             </tr>
             <tr>
-                <td>65-69</td>
+                <td><strong>65-69</strong></td>
                 <td>
                     <asp:TextBox ID="Txt69M" CssClass="AGtxtB" runat="server" OnChange="TbTrigger(this);" OnKeyPress="return isNumberKey2(this, event);" OnTextChanged="TextBox91_TextChanged"></asp:TextBox></td>
                 <td>
@@ -381,7 +382,7 @@
 
             </tr>
             <tr>
-                <td>70-74</td>
+                <td><strong>70-74</strong></td>
                 <td>
                     <asp:TextBox ID="Txt74M" CssClass="AGtxtB" runat="server" OnChange="TbTrigger(this);" OnKeyPress="return isNumberKey2(this, event);" OnTextChanged="TextBox101_TextChanged"></asp:TextBox></td>
                 <td>
@@ -390,7 +391,7 @@
 
             </tr>
             <tr>
-                <td>75-79</td>
+                <td><strong>75-79</strong></td>
                 <td>
                     <asp:TextBox ID="Txt79M" CssClass="AGtxtB" runat="server" OnChange="TbTrigger(this);" OnKeyPress="return isNumberKey2(this, event);" OnTextChanged="TextBox111_TextChanged"></asp:TextBox></td>
                 <td>
@@ -399,7 +400,7 @@
 
             </tr>
             <tr>
-                <td>80+</td>
+                <td><strong>80+</strong></td>
                 <td>
                     <asp:TextBox ID="Txt80M" CssClass="AGtxtB" runat="server" OnChange="TbTrigger(this);" OnKeyPress="return isNumberKey2(this, event);" OnTextChanged="TextBox121_TextChanged"></asp:TextBox></td>
                 <td>
@@ -412,7 +413,7 @@
     </asp:Panel>
 
     <asp:Panel ID="AgePanel3" style="display:none" runat="server">
-        <table  onkeydown="javascript:if(window.event.keyCode == 13) window.event.keyCode = 9;" style="border:1px solid black ;margin:0px;padding:0px" id="AgeGen3" runat="server">
+        <table  onkeydown="javascript:if(window.event.keyCode == 13) window.event.keyCode = 9;" style="margin:0px;padding:0px" id="AgeGen3" runat="server">
             <tr style="text-align:center">
                 <th></th>
                 <th colspan="2">EE</th>
@@ -423,7 +424,7 @@
 
                 
             </tr>
-            <tr style="text-align:center">
+            <tr style="text-align:center;font-weight:bold;">
 
                 <td>Age Band</td>
                 <td>Male</td>
@@ -439,7 +440,7 @@
 
             </tr>
             <tr>
-                <td><20</td>
+                <td style="font-weight:bold"><20</td>
                 <td>
                     <asp:TextBox ID="eem1Txt" TabIndex="31"  OnKeyPress="return isNumberKey2(this, event);" OnChange="TbTrigger(this);"  CssClass="ET AGtxtB" runat="server" OnTextChanged="Eem1Txt_TextChanged"></asp:TextBox>
                 </td>
@@ -470,7 +471,7 @@
             </tr>
             <tr>
 
-                <td>20-24</td>
+                <td style="font-weight:bold">20-24</td>
                 <td>
                     <asp:TextBox ID="eem2Txt" TabIndex="41" CssClass="ET  AGtxtB"  OnKeyPress="return isNumberKey2(this, event);" OnChange="TbTrigger(this);" runat="server" OnTextChanged="Eem2Txt_TextChanged"></asp:TextBox></td>
                 <td>
@@ -498,7 +499,7 @@
                 </td>
             </tr>
             <tr>
-                <td>25-29</td>
+                <td style="font-weight:bold">25-29</td>
                 <td>
                     <asp:TextBox ID="eem3Txt" TabIndex="51" CssClass="ET  AGtxtB"  OnKeyPress="return isNumberKey2(this, event);" OnChange="TbTrigger(this);" runat="server" OnTextChanged="Eem3Txt_TextChanged"></asp:TextBox></td>
                 <td>
@@ -527,7 +528,7 @@
             </tr>
             <tr>
 
-                <td>30-34</td>
+                <td style="font-weight:bold">30-34</td>
                 <td>
                     <asp:TextBox ID="eem4Txt" TabIndex="61" CssClass="ET  AGtxtB"  OnKeyPress="return isNumberKey2(this, event);" OnChange="TbTrigger(this);" runat="server" OnTextChanged="Eem4Txt_TextChanged"></asp:TextBox></td>
                 <td>
@@ -555,7 +556,7 @@
                 </td>
             </tr>
             <tr>
-                <td>35-39</td>
+                <td style="font-weight:bold">35-39</td>
                 <td>
                     <asp:TextBox ID="eem5Txt" TabIndex="71" CssClass="ET  AGtxtB"  OnKeyPress="return isNumberKey2(this, event);" OnChange="TbTrigger(this);" runat="server" OnTextChanged="Eem5Txt_TextChanged"></asp:TextBox></td>
                 <td>
@@ -583,7 +584,7 @@
                 </td>
             </tr>
             <tr>
-                <td>40-44</td>
+                <td style="font-weight:bold">40-44</td>
                 <td>
                     <asp:TextBox ID="eem6Txt" TabIndex="81" CssClass="ET  AGtxtB"  OnKeyPress="return isNumberKey2(this, event);" OnChange="TbTrigger(this);" runat="server" OnTextChanged="Eem6Txt_TextChanged"></asp:TextBox></td>
                 <td>
@@ -612,7 +613,7 @@
             </tr>
             <tr>
 
-                <td>45-49</td>
+                <td style="font-weight:bold">45-49</td>
                 <td>
                     <asp:TextBox ID="eem7Txt" TabIndex="91" CssClass="ET  AGtxtB"  OnKeyPress="return isNumberKey2(this, event);" OnChange="TbTrigger(this);" runat="server" ></asp:TextBox></td>
                 <td>
@@ -641,7 +642,7 @@
             </tr>
 
             <tr>
-                <td>50-54</td>
+                <td style="font-weight:bold">50-54</td>
                 <td>
                     <asp:TextBox ID="eem8Txt" CssClass="ET  AGtxtB"  OnKeyPress="return isNumberKey2(this, event);" OnChange="TbTrigger(this);" runat="server" ></asp:TextBox></td>
                 <td>
@@ -669,7 +670,7 @@
                 </td>
             </tr>
             <tr>
-                <td>55-59</td>
+                <td style="font-weight:bold">55-59</td>
                 <td>
                     <asp:TextBox ID="eem9Txt" CssClass="ET  AGtxtB"  OnKeyPress="return isNumberKey2(this, event);" OnChange="TbTrigger(this);" runat="server" ></asp:TextBox></td>
                 <td>
@@ -697,7 +698,7 @@
                 </td>
             </tr>
             <tr>
-                <td>60-64</td>
+                <td style="font-weight:bold">60-64</td>
                 <td>
                     <asp:TextBox ID="eem10Txt" CssClass="ET  AGtxtB"  OnKeyPress="return isNumberKey2(this, event);" OnChange="TbTrigger(this);" runat="server" ></asp:TextBox></td>
                 <td>
@@ -725,7 +726,7 @@
                 </td>
             </tr>
             <tr>
-                <td>65-69</td>
+                <td style="font-weight:bold">65-69</td>
                 <td>
                     <asp:TextBox ID="eem11Txt" CssClass="ET  AGtxtB"  OnKeyPress="return isNumberKey2(this, event);" OnChange="TbTrigger(this);" runat="server" ></asp:TextBox></td>
                 <td>
@@ -753,7 +754,7 @@
                 </td>
             </tr>
             <tr>
-                <td>70-74</td>
+                <td style="font-weight:bold">70-74</td>
                 <td>
                     <asp:TextBox ID="eem12Txt" CssClass="ET  AGtxtB"  OnKeyPress="return isNumberKey2(this, event);" OnChange="TbTrigger(this);" runat="server" ></asp:TextBox></td>
                 <td>
@@ -781,7 +782,7 @@
                 </td>
             </tr>
             <tr>
-                <td>75-79</td>
+                <td style="font-weight:bold">75-79</td>
                 <td>
                     <asp:TextBox ID="eem13Txt" CssClass="ET  AGtxtB"  OnKeyPress="return isNumberKey2(this, event);" OnChange="TbTrigger(this);" runat="server" ></asp:TextBox></td>
                 <td>
@@ -809,7 +810,7 @@
                 </td>
             </tr>
             <tr>
-                <td>80+</td>
+                <td style="font-weight:bold">80+</td>
                 <td>
                     <asp:TextBox ID="eem14Txt" CssClass="ET  AGtxtB"  OnKeyPress="return isNumberKey2(this, event);" OnChange="TbTrigger(this);" runat="server" ></asp:TextBox></td>
                 <td>
@@ -974,9 +975,9 @@
                     
 
         </td>
-                 <td style="width:40%;padding:0px;margin:0px;">
+                 <td style="width:39%; margin-left:20px;padding-right:2px;position:fixed;border:2px solid gainsboro;background-color:white">
                      <asp:Panel ID="p1_DashPanel1"  runat="server">
-                     <table style="width:100%;border:1px solid blue;">
+                     <table style="width:100%;">
                          
                          <tr>
                               <td colspan="2">
@@ -1033,11 +1034,69 @@
                          </tr>
                      </table>
                          </asp:Panel>
+                     <asp:Panel ID="Panel1"  runat="server">
+                     <table style="width:100%;">
+                         
+                         <tr>
+                              <td colspan="2">
+                                  <asp:Label ID="Label12" runat="server" Text="Plan Tier Enrollment"></asp:Label></td>
+                         </tr>
+                         <tr>
+                             <!-- table view-->
+                             <td style="width:50%;">
+                                 <table style="border:1px solid red">
+                                     <tr>
+                                         <td >
+                                             <asp:Label ID="Label13" runat="server" Text="Tier"></asp:Label></td>
+                                         <td> <asp:Label ID="Label14" runat="server" Text="Enrollment"></asp:Label></td>
+                                     </tr>
+                                     <tr>
+                                         <td> <asp:Label ID="Label15" runat="server" Text="EE"></asp:Label></td>
+                                         <td>
+                                             <asp:TextBox ID="TextBox13" runat="server"></asp:TextBox></td>
+                                     </tr>
+                                     <tr>
+                                         <td> <asp:Label ID="Label16" runat="server" Text="EE+SP"></asp:Label></td>
+                                         <td><asp:TextBox ID="TextBox14" runat="server"></asp:TextBox></td>
+                                     </tr>
+                                     <tr>
+                                         <td> <asp:Label ID="Label17" runat="server" Text="EE+CH"></asp:Label></td>
+                                         <td><asp:TextBox ID="TextBox15" runat="server"></asp:TextBox></td>
+                                     </tr>
+                                     <tr>
+                                         <td> <asp:Label ID="Label18" runat="server" Text="EE+CH(S)"></asp:Label></td>
+                                         <td><asp:TextBox ID="TextBox16" runat="server"></asp:TextBox></td>
+                                     </tr>
+                                     <tr>
+                                         <td> <asp:Label ID="Label19" runat="server" Text="EE+SP+CHs"></asp:Label></td>
+                                         <td><asp:TextBox ID="TextBox17" runat="server"></asp:TextBox></td>
+                                     </tr>
+                                     <tr>
+                                         <td> <asp:Label ID="Label20" runat="server" Text="TOTAL"></asp:Label></td>
+                                         <td><asp:TextBox ID="TextBox18" runat="server"></asp:TextBox></td>
+                                     </tr>
+                                 </table>
+
+
+
+
+                             </td>
+
+                             <!--Pie Chart-->
+                             
+                             <td>
+                                 <table style="border:1px solid red">
+
+                                 </table>
+                             </td>
+                         </tr>
+                     </table>
+                         </asp:Panel>
                  </td>
              </tr>
          </table>
     
- 
+ </div>
 
     <script>
         $(document).ready(function () {
@@ -1940,8 +1999,10 @@ margin:2px;
 </style>
 
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <asp:Button ID="valBtn" runat="server" Text="Validate" />
-    <asp:Button ID="subBtn" runat="server" Text="Submit" />
-    <asp:Button ID="Button1" runat="server" Text="Cancel" />
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
+    <div style="float:right;padding-right:25px;">
+    <asp:Button ID="valBtn" CssClass="Planbtn" runat="server" Text="Validate" />
+    <asp:Button ID="subBtn" CssClass="Planbtn" runat="server" Text="Submit" />
+    <asp:Button ID="Button1" CssClass="PlanbtnNor" runat="server" Text="Cancel" />
+     </div>
 </asp:Content>

@@ -11,6 +11,39 @@ namespace PebbleLitePlus
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["whichPlan"].ToString() == "1")
+            {
+                Basebtn.Attributes.Add("class", "Planbtn");
+                Plan2btn.Attributes.Add("class", "PlanbtnNor");
+                Plan3btn.Attributes.Add("class", "PlanbtnNor");
+                Plan4btn.Attributes.Add("class", "PlanbtnNor");
+                Plan5btn.Attributes.Add("class", "PlanbtnNor");
+                Plan6btn.Attributes.Add("class", "PlanbtnNor");
+            }
+            if (Session["whichPlan"].ToString() == "2")
+            {
+                Plan2btn.Attributes.Add("class", "Planbtn");
+                Basebtn.Attributes.Add("class", "PlanbtnNor");
+                Plan3btn.Attributes.Add("class", "PlanbtnNor");
+                Plan4btn.Attributes.Add("class", "PlanbtnNor");
+                Plan5btn.Attributes.Add("class", "PlanbtnNor");
+                Plan6btn.Attributes.Add("class", "PlanbtnNor");
+            }
+            if (Session["whichPlan"].ToString() == "3")
+                Plan3btn.Attributes.Add("class", "Planbtn");
+            if (Session["whichPlan"].ToString() == "4")
+                Plan4btn.Attributes.Add("class", "Planbtn");
+            if (Session["whichPlan"].ToString() == "5")
+                Plan5btn.Attributes.Add("class", "Planbtn");
+            if (Session["whichPlan"].ToString() == "6")
+                Plan6btn.Attributes.Add("class", "Planbtn");
+
+            Plan2btn.Attributes.Add("class", "PlanbtnNor");
+            Plan3btn.Attributes.Add("class", "PlanbtnNor");
+            Plan4btn.Attributes.Add("class", "PlanbtnNor");
+            Plan5btn.Attributes.Add("class", "PlanbtnNor");
+            Plan6btn.Attributes.Add("class", "PlanbtnNor");
+
 
         }
 
@@ -32,30 +65,19 @@ namespace PebbleLitePlus
             Plan5btn.CssClass = "Planbtn";
             Plan6btn.CssClass = "Planbtn";
             Response.Redirect("Plan1.aspx");
-            Session["Planselected1"] = "1";
-            Session["Networkid"] = "1";
+            Session["whichPlan"] = "1";
 
         }
 
         protected void Plan2btn_Click(object sender, EventArgs e)
         {
-            Session["Plan2btn"] = 1;
-            Session["Plan3btn"] = 0;
-            Session["Plan4btn"] = 0;
-            Session["Plan5btn"] = 0;
-            Session["Plan6btn"] = 0;
-            Session["Planselected1"] = "2";
-            Session["Networkid"] = "2";
-            Session["ScenarioId"] = "12";
+            Session["whichPlan"] = "2";
 
             PlanPlusbtn1.Visible = false;
             Basebtn.CssClass = "Planbtn";
             Plan2btn.CssClass = "B1";
             Response.Redirect("Default.aspx");
-            Plan3btn.CssClass = "Planbtn";
-            Plan4btn.CssClass = "Planbtn";
-            Plan5btn.CssClass = "Planbtn";
-            Plan6btn.CssClass = "Planbtn";
+           
             
             VisibleCheck();
 
@@ -68,23 +90,8 @@ namespace PebbleLitePlus
 
         protected void Plan3btn_Click(object sender, EventArgs e)
         {
-            Session["Plan2btn"] = 0;
-            Session["Basebtn"] = 0;
-            Session["Plan3btn"] = 1;
-            Session["Plan4btn"] = 0;
-            Session["Plan5btn"] = 0;
-            Session["Plan6btn"] = 0;
-            Session["Planselected1"] = "3";
-            Session["Networkid"] = "3";
-            Session["ScenarioId"] = "13";
-
-            Plan2btn.CssClass = "Planbtn";
-            Basebtn.CssClass = "Planbtn";
-
-            Plan4btn.CssClass = "Planbtn";
-            Plan5btn.CssClass = "Planbtn";
-            Plan6btn.CssClass = "Planbtn";
-            Plan3btn.CssClass = "B1";
+            Session["whichPlan"] = "3";
+           
             BtnP2.Visible = false;
             PlanPlusbtn1.Visible = false;
             VisibleCheck();
@@ -95,21 +102,8 @@ namespace PebbleLitePlus
 
         protected void Plan4btn_Click(object sender, EventArgs e)
         {
-            Session["Plan2btn"] = 0;
-            Session["Basebtn"] = 0;
-            Session["Plan3btn"] = 0;
-            Session["Plan4btn"] = 1;
-            Session["Plan5btn"] = 0;
-            Session["Plan6btn"] = 0;
-            Session["Planselected1"] = "4";
-            Session["Networkid"] = "4";
-            Session["ScenarioId"] = "14";
-            Plan2btn.CssClass = "Planbtn";
-            Basebtn.CssClass = "Planbtn";
-            Plan3btn.CssClass = "Planbtn";
-            Plan4btn.CssClass = "B1";
-            Plan5btn.CssClass = "Planbtn";
-            Plan6btn.CssClass = "Planbtn";
+            Session["whichPlan"] = "4";
+           
 
             BtnP2.Visible = false;
             PlanPlusbtn1.Visible = false;
@@ -122,21 +116,8 @@ namespace PebbleLitePlus
         protected void Plan5btn_Click(object sender, EventArgs e)
         {
 
-            Session["Plan2btn"] = 0;
-            Session["Basebtn"] = 0;
-            Session["Plan3btn"] = 0;
-            Session["Plan4btn"] = 0;
-            Session["Plan5btn"] = 1;
-            Session["Plan6btn"] = 0;
-            Session["Planselected1"] = "5";
-            Session["Networkid"] = "5";
-            Session["ScenarioId"] = "15";
-            Plan2btn.CssClass = "Planbtn";
-            Basebtn.CssClass = "Planbtn";
-            Plan3btn.CssClass = "Planbtn";
-            Plan4btn.CssClass = "Planbtn";
-            Plan5btn.CssClass = "B1";
-            Plan6btn.CssClass = "Planbtn";
+            Session["whichPlan"] = "5";
+           
 
             PlanPlusbtn1.Visible = false;
             BtnP2.Visible = false;
@@ -149,23 +130,9 @@ namespace PebbleLitePlus
 
         protected void Plan6btn_Click(object sender, EventArgs e)
         {
-            Session["Plan2btn"] = 0;
-            Session["Basebtn"] = 0;
-            Session["Plan3btn"] = 0;
-            Session["Plan4btn"] = 0;
-            Session["Plan5btn"] = 0;
-            Session["Plan6btn"] = 1;
-            Session["Planselected1"] = "6";
-            Session["Networkid"] = "6";
-            Session["ScenarioId"] = "16";
+            Session["whichPlan"] = "6";
 
-            Plan2btn.CssClass = "Planbtn";
-            Basebtn.CssClass = "Planbtn";
-            Plan3btn.CssClass = "Planbtn";
-            Plan4btn.CssClass = "Planbtn";
-            Plan5btn.CssClass = "Planbtn";
-            Plan6btn.CssClass = "B1";
-
+           
             PlanPlusbtn1.Visible = false;
             BtnP2.Visible = false;
             BtnP3.Visible = false;

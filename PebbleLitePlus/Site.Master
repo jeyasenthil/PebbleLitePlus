@@ -51,18 +51,39 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
+         <div class="container-fluid">
            <header>
                <br />
-               
-                  <div style="text-align:center">
-        <h3 style="color:#0099A8;  font-family: Open Sans, sans-serif;">Health Benefits Consulting Suite</h3>
-    </div>
+                             
+              
+           
+                   
+             <div class="row sticky" style="margin:auto;padding:0px;width:99%;vertical-align:top;border-color:gainsboro;border:1px outset; ">
+                  
+                         <div class="col-3"  style="width:210px; margin:0px;padding:0px;" ><img src="Images/Logo.png"  alt="Claros Analytics" />
+                     
+                           </div>
+                
+                         <div class="col-9" style="padding:0px; vertical-align:central; text-align:center; border-color:gainsboro "  >
+         
+                
+                                <h3 style="color:#0099A8; padding-top:10px; font-family: Open Sans, sans-serif;">Health Benefits Consulting Suite</h3>
+      
+                    
+                               </div> 
+                    </div>
+              
+                 
+                   
                <br />
                <br />
               </header>
+              </div>
+              <br />
+               <br />
         <div class="container-fluid">
-         <div class="row" style="height:10%;width:100%">
-             <div class="offset-1">
+         <div class="row " style="height:10%;width:100%;margin:auto;padding:0px;">
+             <div>
                 
                             
  <asp:updatepanel ID="Plbtns" UpdateMode="Conditional" runat="server"> 
@@ -72,26 +93,26 @@
 
                         <asp:Panel ID="Plans_panel" runat="server">
                                <div class="btn-group">
-                               <asp:Button ID="Basebtn" CssClass="Planbtn" AutoPostBack="true" EnableViewState="true" ClientIDMode="Static" runat="server"  Text="Base" OnClick="Basebtn_Click" /> 
+                               <asp:Button ID="Basebtn" CssClass="Planbtn" AutoPostBack="true" EnableViewState="true" ClientIDMode="Static" runat="server"  Text="Plan1" OnClick="Basebtn_Click" /> 
                                <asp:Button ID="PlanPlusbtn1" CssClass="PlanPlusbtn" AutoPostBack="true" runat="server" Text="+"  OnClick="PlanPlusbtn1_Click" /> 
 
-                                <asp:Button ID="Plan2btn" CssClass="Planbtn" AutoPostBack="true" EnableViewState="true" ClientIDMode="Static" runat="server" Text="Plan 2" visible="false" OnClick="Plan2btn_Click"  />
+                                <asp:Button ID="Plan2btn" CssClass="PlanbtnNor" AutoPostBack="true" EnableViewState="true" ClientIDMode="Static" runat="server" Text="Plan 2" visible="false" OnClick="Plan2btn_Click"  />
                                 <asp:Button ID="BtnP2"  CssClass="PlanPlusbtn" AutoPostBack="true" runat="server" Text="+" visible="false" OnClick="BtnP2_Click"/>
                               
 
-                                <asp:Button ID="Plan3btn"  CssClass="Planbtn" AutoPostBack="true" EnableViewState="true" ClientIDMode="Static" runat="server" Text="Plan 3" visible="false" OnClick="Plan3btn_Click" />
+                                <asp:Button ID="Plan3btn"  CssClass="PlanbtnNor" AutoPostBack="true" EnableViewState="true" ClientIDMode="Static" runat="server" Text="Plan 3" visible="false" OnClick="Plan3btn_Click" />
                                 <asp:Button ID="BtnP3" CssClass="PlanPlusbtn" AutoPostBack="true" runat="server" Text="+"  visible="false"  OnClick="BtnP3_Click" />
                                 
                                    <!-- OnClientClick="btnP3()"-->
-                                <asp:Button ID="Plan4btn" CssClass="Planbtn" AutoPostBack="true" EnableViewState="true" ClientIDMode="Static" runat="server" Text="Plan 4" visible="false" OnClick="Plan4btn_Click" />
+                                <asp:Button ID="Plan4btn" CssClass="PlanbtnNor" AutoPostBack="true" EnableViewState="true" ClientIDMode="Static" runat="server" Text="Plan 4" visible="false" OnClick="Plan4btn_Click" />
                                 <asp:Button ID="BtnP4" CssClass="PlanPlusbtn" AutoPostBack="true" runat="server" Text="+"  visible="false" OnClick="BtnP4_Click"  />
                                 
 
-                                <asp:Button ID="Plan5btn"  CssClass="Planbtn" AutoPostBack="true" EnableViewState="true" ClientIDMode="Static" runat="server" Text="Plan 5"  visible="false" OnClick="Plan5btn_Click" />
+                                <asp:Button ID="Plan5btn"  CssClass="PlanbtnNor" AutoPostBack="true" EnableViewState="true" ClientIDMode="Static" runat="server" Text="Plan 5"  visible="false" OnClick="Plan5btn_Click" />
                                 <asp:Button ID="BtnP5" CssClass="PlanPlusbtn" AutoPostBack="true"  runat="server" Text="+" CausesValidation="false"  visible="false" OnClick="BtnP5_Click"  />
                                 
 
-                                <asp:Button ID="Plan6btn" CssClass="Planbtn" runat="server" AutoPostBack="true" ClientIDMode="Static" EnableViewState="true" Text="Plan 6"  visible="false" OnClick="Plan6btn_Click"  />
+                                <asp:Button ID="Plan6btn" CssClass="PlanbtnNor" runat="server" AutoPostBack="true" ClientIDMode="Static" EnableViewState="true" Text="Plan 6"  visible="false" OnClick="Plan6btn_Click"  />
                                
                                        </div><!-- button group-->
                                     </asp:Panel>
@@ -101,28 +122,44 @@
              </div>
          </div>
          <div class="row" style="height:80%;width:100%"> 
-             <div class="offset-1">
+             <div >
                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
                    </div>
               </div>
             
-         <div class="row" style="height:10%;width:100%">
-             <div class="offset-1">
-             <div class="col-7" style="float:left;">
-                 <asp:Button ID="homeBtn" runat="server" Text="Home" OnClick="homeBtn_Click" />
-                 <asp:Button ID="saveBtn" runat="server" Text="Save/SaveAs" />
+         <div class="row" style="height:10%;width:100%;">
+             <div class="stickybot" style="padding-bottom:5px;">
+             <div class="col-8" style="float:left;" >
+                 <div>
+                 <asp:Button ID="homeBtn" CssClass="Planbtn" runat="server" Text="Home" OnClick="homeBtn_Click" />
+                 <asp:Button ID="saveBtn" CssClass="PlanbtnNor" runat="server" Text="Save/SaveAs" />
+                     </div>
+                     </div>
+             
+             <div class="col-4;float:right;">
+                 <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server"></asp:ContentPlaceHolder>
+             </div>
+                  </div>
+             </div>
+             </div>
+
+
+            <!-- <div class="stickybot">
+             <div class="col-8" style="float:left">
+                 <input type="submit" id="homeBtn" value="Home" id="homeBtn" class="Planbtn">
+                 <input type="submit" id="saveBtn" value="Save/SaveAs" id="saveBtn" class="PlanbtnNor">
               </div>
-             <div class="col-3" style="float:right;">
+             <div class="col-4;float:right;">
                  <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+                 
+                 </div>
              </div>
-             </div> 
-             </div>
-          </div> 
+          </div> -->
          <!--<hr />
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - PebbleLitePlus</p>
             </footer>-->
-       
+      
 
     </form>
     <script>
