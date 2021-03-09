@@ -169,19 +169,19 @@ a {
 }
 
 .sticky {
-    
     position: fixed;
     top: 0px;
     padding: 0px;
-    background-color:white;
-   
+    background-color: white;
+    z-index: 9999
 }
 .stickybot {
     position: fixed;
     bottom: 0px;
     padding: 0px;
-    margin:0px;
+    margin: 0px;
     background-color: white;
+    z-index: 9999
 }
 
 .B1 {
@@ -215,6 +215,16 @@ a {
     padding:5px;
     
 }
+
+/* For stepper control color*/
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #00416A;
+    /* J #08B3E5*/
+    /*C #5D7291*/
+    /*N #00416A*/
+}
 .btn-check:active + .btn-outline-primary, .btn-check:checked + .btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active {
     background-color: #00AEC0;
 }
@@ -245,7 +255,7 @@ button:active {
 /* Age gender*/
 .AGtxtB1 {
     Height: 23px;
-    Width: 87px;
+    Width: 84px;
     text-align: right;
    
 }
@@ -253,7 +263,7 @@ button:active {
 .AGtxtB {
     color: black;
     Height: 23px;
-    Width: 87px;
+    Width: 84px;
     text-align: right;
 }
 

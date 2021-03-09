@@ -26,6 +26,8 @@ namespace PebbleLitePlus
             string effDate = "01/" + "01/" + (Convert.ToInt32(now.ToString("yyyy")) + 1).ToString();
             Session["effDate"] = effDate;
             Session["whichPlan"] = "1";
+            Session["EnrollmentTiers"] = "4";
+            Session["Id"] = "";
             //Plan 1 session variables
 
             //View1 -step 1
